@@ -93,7 +93,7 @@ local function CreateButton(cloneModeOption)
     
     okButton:SetStyle("text_default")
     
-    -- Load saved position or use default
+    -- Load saved position or use default test
     LoadSavedPositions()
     if savedPositions["cloneModeButton"] then
         okButton:AddAnchor("TOPLEFT", "UIParent", savedPositions["cloneModeButton"].x, savedPositions["cloneModeButton"].y)
@@ -177,4 +177,5 @@ UIParent:SetEventHandler(UIEVENT_TYPE.ENTERED_WORLD, EnteredWorld)
 X2:AddEscMenuButton(5,1006,"tgos","Clone Mode Toggle")
 
 -- Register the toggle function with ID 1001 (using 1001 to avoid conflicts)
+
 ADDON:RegisterContentTriggerFunc(1006, ToggleCloneModeButton)
