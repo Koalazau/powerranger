@@ -1,3 +1,5 @@
+--Test
+
 API_TYPE = {
     CONSOLE = { id = 2, apiname = "X2Console"},
     ABILITY = { id = 3, apiname = "X2Ability"},
